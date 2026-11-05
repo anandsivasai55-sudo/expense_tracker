@@ -68,3 +68,9 @@ Developer Contribution
 Name: [Anand Siva Sai Munaga]
 
 Contribution: Flutter application development, UI design, expense management, local storage, and testing.
+## Application Variation
+
+- Application Type: General Expense Tracker
+- Platform: Android
+- Framework: Flutter
+- Purpose: To track daily expenses, manage spending, and view expense summaries.

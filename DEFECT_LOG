@@ -1,0 +1,29 @@
+Defect Log – My Expense Tracker
+
+Project Information
+
+- Project Name: My Expense Tracker
+- Platform: Android
+- Developer: Anand Siva Sai Munaga
+
+Defect 1
+
+Field| Details
+Defect ID| BUG-001
+Description| Spelling mistake in amount validation message
+Steps to Reproduce| Enter amount as 0 and try to save
+Expected Result| Amount must be greater than zero
+Actual Result| Amount must be great than zero
+Status| Open
+Priority| Low
+
+Testing Summary
+
+- App installation: Successful
+- App launch: Successful
+- Add expense: Successful
+- Data persistence after restart: Successful
+- Amount validation: Tested
+- Physical device: Vivo T3 5G
+
+No other defects were observed during the tests performed.
