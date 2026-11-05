@@ -1,134 +1,92 @@
-<div align="center">💰 My Expense Tracker
+<div align="center">💰 MY EXPENSE TRACKER
 
-Flutter-Based Personal Expense Tracking Application
+Smart Expense Management Application
 
-A simple and efficient mobile application to manage daily expenses, monitor spending habits, and understand personal financial activities.
+A Flutter-based mobile application designed to track daily expenses, manage spending, and monitor financial activities.
 
-<br/>"Flutter" (https://img.shields.io/badge/Framework-Flutter-blue?logo=flutter)
-"Dart" (https://img.shields.io/badge/Language-Dart-blue?logo=dart)
-"Platform" (https://img.shields.io/badge/Platform-Android-green?logo=android)
+"Flutter" (https://img.shields.io/badge/Flutter-Framework-02569B?logo=flutter&logoColor=white)
+"Dart" (https://img.shields.io/badge/Dart-Language-0175C2?logo=dart&logoColor=white)
+"Android" (https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)
 "Version" (https://img.shields.io/badge/Version-1.0.0-orange)
-"Status" (https://img.shields.io/badge/Status-Completed-success)
 
 </div>---
 
 📌 About The Project
 
-Expense Tracker is a Flutter-based mobile application developed to help users record, manage, and monitor their daily expenses.
+My Expense Tracker is a personal finance management application developed using Flutter.
 
-Users can add expenses with an amount, category, date, and note. The application provides transaction management and category-wise expense summaries through a simple and user-friendly interface.
+It allows users to record daily expenses, organize transactions, monitor monthly budgets, and view category-wise spending summaries.
 
-The application stores expense information locally on the device using SharedPreferences without requiring an external database or backend server.
+The application uses local device storage to maintain expense records.
 
-✨ Key Features
+✨ Features
 
-- ➕ Add Expenses – Record daily expenses with relevant details.
-- 📋 View Transactions – Access all recorded transactions.
-- 🔍 Expense Details – View individual expense information.
-- 🗑️ Delete Expenses – Remove unwanted transactions.
-- 📊 Category-wise Summary – Understand spending across categories.
-- 💾 Local Storage – Save expense information on the device.
-- ✅ Input Validation – Validate user-entered information.
+- Add and manage daily expenses.
+- View all transactions.
+- View individual expense details.
+- Delete unwanted expenses.
+- Category-wise expense summaries.
+- Monthly budget management.
+- Local data storage.
+- Input validation.
 
 📱 Application Screenshots
 
-Dashboard
+<div align="center">Dashboard
 
-"Dashboard" (screenshots/dashboard.png)
+<img src="screenshots/dashboard.png" width="280"/>Add Expense
 
-Add Expense
+<img src="screenshots/add_expense.png" width="280"/>Expense Summary
 
-"Add Expense" (screenshots/add_expense.png)
-
-Expense Summary
-
-"Summary" (screenshots/summary.png)
-
-🏗️ Application Architecture
+<img src="screenshots/summary.png" width="280"/></div>🏗️ System Architecture
 
 flowchart TD
-    A[Expense Tracker App] --> B[Flutter UI]
-    B --> C[Provider State Management]
-    C --> D[Application Screens]
-    D --> E[Expense Model]
-    C --> F[Storage Service]
-    F --> G[SharedPreferences]
-    G --> H[Local Device Storage]
+    A["My Expense Tracker"] --> B["Flutter UI"]
+    B --> C["Provider"]
+    C --> D["Screens"]
+    D --> E["Expense Model"]
+    C --> F["Storage Service"]
+    F --> G["SharedPreferences"]
 
 🔄 Application Workflow
 
 flowchart TD
-    A([Start Application]) --> B[Open Dashboard]
-    B --> C{Select Action}
-    C -->|Add Expense| D[Enter Expense Details]
-    D --> E[Validate Input]
-    E -->|Valid| F[Save Expense]
-    E -->|Invalid| D
-    F --> G[Update Dashboard]
-    C -->|View Transactions| H[Display Transactions]
-    C -->|View Summary| I[Display Category Summary]
-    C -->|Delete Expense| J[Remove Transaction]
-    J --> G
-    H --> B
+    A([Start]) --> B[Dashboard]
+    B --> C{Select Option}
+    C --> D[Add Expense]
+    C --> E[View Transactions]
+    C --> F[View Summary]
+    D --> G[Validate Details]
+    G --> H[Save Expense]
+    H --> I[Update Dashboard]
+    E --> I
+    F --> I
     I --> B
-    G --> B
 
-🛠️ Technologies Used
+🛠️ Technology Stack
 
-Technology| Purpose
-Flutter| Mobile application development
+Technology| Usage
+Flutter| Mobile UI development
 Dart| Programming language
 Provider| State management
-SharedPreferences| Local data storage
-Android| Target platform
-Git & GitHub| Version control and project hosting
+SharedPreferences| Local storage
+Android| Application platform
+GitHub| Version control
 
-💾 Data Storage
+💾 Data Management
 
-The application uses SharedPreferences to store expense details locally on the user's device.
-
+- Expense records are stored locally.
+- SharedPreferences is used for persistence.
 - No external database is required.
 - No backend server is used.
-- Expense information is managed locally.
-- Data is accessed through the application's storage service.
 
-📂 Project Structure
-
-expense_tracker/
-│
-├── lib/
-│   ├── models/
-│   │   └── expense.dart
-│   │
-│   ├── providers/
-│   │   └── expense_provider.dart
-│   │
-│   ├── services/
-│   │   └── storage_service.dart
-│   │
-│   ├── screens/
-│   │
-│   ├── widgets/
-│   │
-│   └── main.dart
-│
-├── screenshots/
-│   ├── dashboard.png
-│   ├── add_expense.png
-│   └── summary.png
-│
-├── pubspec.yaml
-└── README.md
-
-⚙️ Installation & Setup
-
-Follow these steps to run the project locally.
+⚙️ Installation
 
 1. Clone the repository
 
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone YOUR_REPOSITORY_URL
 
-2. Navigate to the project folder
+2. Open the project folder
 
 cd expense_tracker
 
@@ -140,61 +98,33 @@ flutter pub get
 
 flutter run
 
-Requirements:
-
-- Flutter SDK
-- Dart SDK
-- Android Studio or VS Code
-- Android Emulator or Android Device
-
-👨‍💻 Developer Contribution
-
-Name: Anand Siva Sai Munaga
-
-Contribution:
-
-- Flutter application development
-- User interface design
-- Expense management functionality
-- Local storage integration
-- Application testing
-- Project integration
-
 👥 Team Members
 
-S.No| Student Name| Roll Number| Role
-1| Anand Siva Sai Munaga| 248X1A4597| Project Development & Integration
+S.No| Name| Roll Number| Responsibility
+1| Anand Siva Sai Munaga| 248X1A4597| Development & Integration
 2| Kavati Manoj Kumar| 248X1A4571| UI Design & Expense Screens
 3| M. John Babu| 248X1A4598| Testing & Documentation
 
-📋 Project Information
+👨‍💻 Project Developer
 
-Category| Details
-Project Name| Expense Tracker
-Application Type| General Expense Tracker
-Platform| Android
-Framework| Flutter
-Programming Language| Dart
-Storage| SharedPreferences
-Purpose| Track daily expenses and manage spending
-Version| 1.0.0
+Anand Siva Sai Munaga
 
-🎯 Future Enhancements
+Flutter Development | UI Design | Expense Management | Testing
 
-- Monthly and yearly expense reports
-- Expense visualization using charts
-- Budget planning and alerts
-- Export expense reports as PDF
-- Cloud backup and synchronization
+🚀 Future Enhancements
 
-📜 License
-
-This project is developed for academic and educational purposes.
+- Interactive expense charts.
+- Monthly and yearly reports.
+- Budget notifications.
+- PDF report generation.
+- Cloud backup.
 
 ---
 
-<div align="center">💙 Built with Flutter
+<div align="center">💙 MY EXPENSE TRACKER
 
-Expense Tracker – Track Smart. Spend Better.
+Track Smart. Spend Better.
+
+Developed with Flutter
 
 </div>
