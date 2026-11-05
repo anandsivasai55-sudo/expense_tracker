@@ -1,45 +1,64 @@
 💰 My Expense Tracker
 
-A Flutter-Based Personal Expense Tracking Application.
+Project Topic
 
-"Flutter" (https://img.shields.io/badge/Flutter-Framework-blue?logo=flutter)
-"Dart" (https://img.shields.io/badge/Dart-Language-blue?logo=dart)
-"Platform" (https://img.shields.io/badge/Platform-Android-green)
+Flutter-Based Personal Expense Tracking Application
 
-📌 About The Project
+Description
 
-My Expense Tracker is a mobile application developed using Flutter to manage daily expenses and track spending habits.
+My Expense Tracker is a mobile application developed using Flutter. It helps users record, manage, and track their daily expenses.
 
-✨ Features
+Users can add expenses with an amount, category, date, and note. They can view transactions, check expense details, and see category-wise summaries.
 
-- Add daily expenses
-- View expense history
+Features
+
+- Add new expenses
+- View all transactions
+- View individual expense details
 - Delete expenses
 - Category-wise expense summary
 - Local data storage
-- Simple user interface
+- Input validation
 
-🛠️ Technology Stack
+Technologies Used
 
 - Flutter
 - Dart
 - Provider
 - SharedPreferences
 
-💾 Data Management
+Data Source
 
-The application uses SharedPreferences to store expense data locally. No backend server is required.
+Expense details are entered by the user and stored locally on the device using SharedPreferences. No external database or backend is used.
 
-👥 Team Members
+How to Run
 
-S.No| Name| Roll Number
-1| Anand Siva Sai Munaga| 248X1A4597
-2| Kavati Manoj Kumar| 248X1A4571
-3| M. John Babu| 248X1A4598
+1. Install Flutter SDK.
+2. Clone this repository.
+3. Open the project folder in VS Code.
+4. Run the following commands:
 
-🚀 Future Enhancements
+flutter pub get
+flutter run
 
-- Monthly expense reports
-- Data backup
-- Budget planning
-- Improved analytics
+Project Structure
+
+- "lib/models" – Expense model
+- "lib/providers" – State management
+- "lib/services" – Local storage
+- "lib/screens" – Application screens
+- "lib/widgets" – Reusable widgets
+
+Team Members
+
+1. Anand Siva Sai Munaga – 248X1A4597
+2. Kavati Manoj Kumar – 248X1A4571
+3. M. John Babu – 248X1A4598
+
+Developer Contribution
+
+Anand Siva Sai Munaga
+
+Contribution: Flutter application development, UI design, expense management, local storage, and testing.
+
+Team Contribution: Project development, implementation, and testing.
