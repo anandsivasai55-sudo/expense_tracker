@@ -74,3 +74,9 @@ Contribution: Flutter application development, UI design, expense management, lo
 - Platform: Android
 - Framework: Flutter
 - Purpose: To track daily expenses, manage spending, and view expense summaries.
+## Team Members
+| S.No | Student Name | Roll Number | Role |
+|---|---|---|---|
+| 1 | Anand Siva Sai Munaga | 248X1A4597 | Project Development & Integration |
+| 2 | M. Sriharinadh Reddy | 248X1A4583 | UI Design & Expense Screens |
+| 3 | M. John Babu | 248X1A4598 | Testing & Documentation |
