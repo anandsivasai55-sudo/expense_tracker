@@ -65,6 +65,6 @@ Project Structure
 
 Developer Contribution
 
-Name: [Enter your name]
+Name: [Anand Siva Sai Munaga]
 
 Contribution: Flutter application development, UI design, expense management, local storage, and testing.
